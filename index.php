@@ -1,0 +1,1 @@
+<?php header( 'Location: /www.intellectsoft.net/index.html' ) ;  ?>
