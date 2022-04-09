@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap');
+
 *{
 margin: 0;
 padding: 0;
-box-sizing: border-box;
-font-family: 'Fredoka', sans-serif;  
+box-sizing: border-box; 
 }
 
 :root {
@@ -10,12 +11,12 @@ font-family: 'Fredoka', sans-serif;
 --white: white;
 --black: black;
 --lightblack: rgba(0, 0, 0, 0.60);
---verylightblack: rgba(0, 0, 0, 0.25);
+--verylightblack: rgba(0, 0, 0, 0.39);
 --blackblue: #0c1018;
 --darkgreen: #024539;
 --lightmilk: #f9f8f8;
 --lightblue: #0181fe;
---lighterblue: #017ffe56;
+--lighterblue: #3799fc69;
 --greenblue: #008577;
 --greenbluel:rgba(0, 133, 120, 0.445);
 --logored: RGB(229,28,36);
@@ -34,4 +35,109 @@ z-index: 1000;
 background: var(--black) url(preloader.gif) no-repeat center center;
 background-size: 20%;
 filter: saturate(15) hue-rotate(350deg) contrast(125%) brightness(75%);
+}
+
+
+.founders{
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+color: var(--white);
+text-align: center;
+}
+
+.founder-wrapper{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.founder-slide{
+width: 22%;
+height: 290px;
+padding-top: 250px;
+font-size: 1.3rem;
+font-weight: 300;
+font-family: 'Fredoka', sans-serif;
+}
+
+
+.founders-head{
+color: var(--black);
+font-size: 2.6rem;
+padding-top: 50px;
+font-weight: 600;
+}
+
+.founder1{
+background-size: cover;
+background-position: center;
+border-right: 4px solid var(--lighterblue);
+background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Duong\ Duy\ Dinh.jpg);
+}
+.founder2{
+background-size: cover;
+background-position: center;
+border-right: 4px solid var(--lighterblue);
+background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Duong\ Quang\ Huy.jpg);
+}
+.founder3{
+background-size: cover;
+background-position: center;
+border-right: 4px solid var(--lighterblue);
+background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Bui\ Van\ Phuong.jpg);
+}
+.founder4{
+background-size: cover;
+background-position: center;
+background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Vinh\ Duong.jpg);
+}
+
+
+
+
+
+@media screen and (max-width: 780px) {
+
+
+.founder-wrapper{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.founder-slide{
+width: 95%;
+height: 270px;
+padding-top: 230px;
+font-size: 1.4rem;
+font-weight: 200;
+margin-bottom: 20px;
+}
+
+
+.founders-head{
+font-size: 2.3rem;
+padding-top: 20px;
+font-weight: 650;
+}
+
+.founder1{
+border-right: none;
+background-size: 100%;
+}
+
+.founder2{
+border-right: none;
+background-size: 100%;
+}
+
+.founder3{
+border-right: none;
+background-size: 100%;
+}
+
 }
