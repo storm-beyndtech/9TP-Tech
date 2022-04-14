@@ -6,7 +6,7 @@ loader.style.display = "none";
 })
 
 
-if (window.location.protocol != "https:") {
-window.location.protocol = "https:";
-}
+// if (window.location.protocol != "https:") {
+// window.location.protocol = "https:";
+// }
 

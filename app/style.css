@@ -100,6 +100,10 @@ background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack
 
 @media screen and (max-width: 780px) {
 
+#preloader{
+background-size: 50%;
+}
+        
 
 .founder-wrapper{
 width: 100%;
