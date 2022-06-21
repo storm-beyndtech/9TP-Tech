@@ -91,7 +91,14 @@ background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack
 .founder4{
 background-size: cover;
 background-position: center;
+border-right: 4px solid var(--lighterblue);
 background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Vinh\ Duong.jpg);
+}
+
+.founder5{
+background-size: cover;
+background-position: center;
+background-image: linear-gradient(90deg, var(--verylightblack), var(--verylightblack)), url(founders/do-vinh-quang.jpeg);
 }
 
 
@@ -131,17 +138,28 @@ font-weight: 650;
 
 .founder1{
 border-right: none;
-background-size: 100%;
+background-size: cover;
 }
 
 .founder2{
 border-right: none;
 background-size: 100%;
+background-position-y: 30%;
 }
 
 .founder3{
 border-right: none;
 background-size: 100%;
+background-position-y: 20%;
+}
+
+.founder4{
+border-right: none;
+/* background-size: 100%; */
+}
+
+.founder5{
+background-position-y: 30%;
 }
 
 }
