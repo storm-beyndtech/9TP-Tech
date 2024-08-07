@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+}
+
+:root {
+--blue: #6495ed;
+--white: white;
+--black: black;
+--lightblack: rgba(0, 0, 0, 0.60);
+--verylightblack: rgba(0, 0, 0, 0.39);
+--blackblue: #0c1018;
+--darkgreen: #024539;
+--lightmilk: #f9f8f8;
+--lightblue: #0181fe;
+--lighterblue: #3799fc69;
+--greenblue: #008577;
+--greenbluel:rgba(0, 133, 120, 0.445);
+--logored: RGB(229,28,36);
+--logopink: RGB(244,194,197);
+--lightred: #ec003f;
+--verylightpink: rgb(253, 205, 207);
+--preloader: RGB(223,223,223);
+}
+
+
+#preloader{
+width: 100%;
+height: 100vh;
+position: fixed;
+z-index: 1000;
+background: var(--black) url(preloader.gif) no-repeat center center;
+background-size: 20%;
+filter: saturate(15) hue-rotate(350deg) contrast(125%) brightness(75%);
+}
+
+.newsProject{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.newsProject .text{
+  width: 70%;
+  text-align: center;
+}
+
+.newsProject .media{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.newsProject img{
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.newsProject video{
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.location, .location2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.location2{
+  flex-direction: row;
+}
+
+.locText{
+  width: 100%;
+  max-width: 500px;
+}
+
+.locImg img{
+  width: 300px;
+  border-radius: 5px;
+}
+
+.founders{
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+color: var(--white);
+text-align: center;
+}
+
+.founder-wrapper{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.founder-slide{
+width: 22%;
+height: 290px;
+padding-top: 250px;
+font-size: 1.3rem;
+font-weight: 300;
+font-family: 'Fredoka', sans-serif;
+}
+
+
+.founders-head{
+color: var(--black);
+font-size: 2.6rem;
+padding-top: 50px;
+font-weight: 600;
+}
+
+.founder1{
+background-size: cover;
+background-position: center;
+border-right: 4px solid var(--lighterblue);
+background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Duong\ Duy\ Dinh.jpg);
+}
+.founder2{
+background-size: cover;
+background-position: center;
+border-right: 4px solid var(--lighterblue);
+background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Duong\ Quang\ Huy.jpg);
+}
+.founder3{
+background-size: cover;
+background-position: center;
+border-right: 4px solid var(--lighterblue);
+background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Bui\ Van\ Phuong.jpg);
+}
+.founder4{
+background-size: cover;
+background-position: center;
+border-right: 4px solid var(--lighterblue);
+background-image: linear-gradient(90deg, var(--verylightblack), var(--lightblack)), url(founders/Vinh\ Duong.jpg);
+}
+
+.founder5{
+background-size: cover;
+background-position: center;
+background-image: linear-gradient(90deg, var(--verylightblack), var(--verylightblack)), url(founders/do-vinh-quang.jpeg);
+border-radius: 5px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+
+#preloader{
+background-size: 50%;
+}
+
+.newsProject{
+  padding: 20px 10px;
+  margin-bottom: 100px;
+}
+
+.newsProject .text{
+  width: 100%;
+}
+
+.newsProject .media{
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.newsProject .media img{
+  width: 100%;
+  height: auto;
+}
+        
+
+.newsProject .media video{
+  width: 100%;
+  height: auto;
+}
+
+
+.location, .location2{
+  gap: 50px;
+  flex-direction: row;
+  padding-top: 0;
+}
+
+.locText{
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.locText h2:nth-child(1){
+  font-size: 3rem;
+}
+
+.locImg{
+  width: 100%;
+}
+
+.locImg img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+       
+.founder-wrapper{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.founder-slide{
+width: 95%;
+height: 270px;
+padding-top: 230px;
+font-size: 1.4rem;
+font-weight: 200;
+margin-bottom: 20px;
+}
+
+
+.founders-head{
+font-size: 2.3rem;
+padding-top: 20px;
+font-weight: 650;
+}
+
+.founder1{
+border-right: none;
+background-size: cover;
+}
+
+.founder2{
+border-right: none;
+background-size: 100%;
+background-position-y: 30%;
+}
+
+.founder3{
+border-right: none;
+background-size: 100%;
+background-position-y: 20%;
+}
+
+.founder4{
+border-right: none;
+}
+
+.founder5{
+background-position-y: 30%;
+}
+
+}
